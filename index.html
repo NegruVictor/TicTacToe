@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link href="style.css" rel="stylesheet">
+    <title>TicTacToe</title>
+  </head>
+  <center>
+  <body>
+    <h1 class="title">TicTacToe</h1>
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="enter player name 1" id="playerX">
+      <input type="text" class="form-control" placeholder="enter player name 2" id="player0">
+      <button class="btn" type="button" id="button2" onclick="button()">Enter</button>
+    </div>
+    <br>
+    <button id="btnReset" onclick="resetGame()">start/reset</button>
+    <br>
+    <br>
+    <div class="row">
+      <div id="player-1">
+        <div class="card">
+            <h4 id="nameX">Player X</h4>
+            <h4 class="card-text" >Score: <span id="X">0</span></h4>
+        </div>
+      </div>
+      <div id="player-2">
+        <div class="card">
+            <h4 id="name0">Player 0</h4>
+            <h4 class="card-text" >Score: <span id="0">0</span></h4>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div id="game" class="container"></div>
+  </center>
+    <script src="inst.js"></script>
+  </body>
+</html>
